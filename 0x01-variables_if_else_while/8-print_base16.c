@@ -6,3 +6,6 @@
 */
 int main(void)
 {
+int numb;
+char alphab;
+
