@@ -1,3 +1,8 @@
+/*
+* File: 2-print_alphabet_x10.c
+* Auth: dewdrops77
+*/
+
 #include "main.h"
 
 /**
@@ -10,9 +15,8 @@ char letter;
 
 while ( count++ <= 9 )
 {
-for ( letter = 'a'; letter <= 'z'; letter++)
+for (letter = 'a'; letter <= 'z'; letter++)
 _putchar(letter);
--putchar('\n');
 _putchar('\n');
 }
 }
