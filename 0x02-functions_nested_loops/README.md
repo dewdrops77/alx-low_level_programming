@@ -1,1 +1,1 @@
-This is my first project on Functions, nested loops
+This is my Readme on C program 
