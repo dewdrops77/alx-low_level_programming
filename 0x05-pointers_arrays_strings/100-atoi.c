@@ -1,28 +1,44 @@
+#include "main.h"
 #include <stdio.h>
-#include <stdlib.h>
-#include <time.h>
 /**
- * main - creates a password of sum 2772
- *
- * Return:0;
+ * _atoi - print the integer of a char.
+ * @s:  tested char
+ * Return: integer.
  */
-int main(void)
+int _atoi(char *s)
 {
-	int keynumber, symbol, checksum;
+	unsigned int counter, i, j, k, length, num, l;
+	int aux;
 
-	srand(time(NULL));
-	checksum = 2772;
-	keynumber = 0;
+	aux = 1;
+	counter = 0;
+	num = 0;
 
-	while (keynumber < (checksum - 122))
+	while (*(s + counter) != '\0')
+		counter++;
+	for (i = 0; i < counter; i++)
 	{
-		symbol = (rand() % (122 - 97 + 1)) + 97;/*to print mostly lowercaseletters*/
-		printf("%c", symbol);
-		keynumber = keynumber + symbol;
+		if (*(s + i) <= '9' && *(s + i) >= '0')
+		break;
+	}
+	for (j = i; j < counter; j++)
+	{
+		if (!(*(s + j) <= '9' && *(s + j) >= '0'))
+			break;
 	}
 
-	symbol = checksum - keynumber;
-	printf("%c", symbol);
-
-	return (0);
+	for (k = 0; k < i; k++)
+	{
+		if (*(s + k) == '-')
+			aux = -aux;
+	}
+	length = j - i;
+	l = i;
+		while (length >= 1)
+	{
+		num = num * 10 + (*(s + l) - '0');
+		l++;
+		length--;
+	}
+	return (num * aux);
 }
