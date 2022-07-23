@@ -1,1 +1,1 @@
-My project on static libraries C programming
+this is my Readme on static library 
