@@ -1,1 +1,1 @@
-this is my Readme on static library 
+My Project task on Static libraries
