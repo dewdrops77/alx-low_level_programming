@@ -1,2 +1,1 @@
-C project on singly linked list
-
+Project on C-programming "singly linked lists
