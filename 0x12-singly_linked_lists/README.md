@@ -1,1 +1,1 @@
-Project on C-programming "singly linked lists
+this is my readme on linked list
